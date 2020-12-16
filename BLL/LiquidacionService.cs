@@ -21,5 +21,30 @@ namespace BLL
             //PedidoRepository = new PedidoRepository(connectionManager);
         }
 
+        public void Guardar()
+        {
+
+            try
+            {
+                if (LiquidacionRepository.BuscarRtry(persona.Identificacion) == null)
+                {
+
+                    personaRepository.Guardar(persona);
+                    return " Guardamos su registro y pulsacion Exitosamente [__ U_U __]";
+
+                }
+                else
+                {
+                    return "*Atencion* La Identificacion [" + persona.Identificacion + "] ha sido registrada anteriormente";
+                }
+            }
+            catch (Exception exception)
+            {
+
+                return " Error de la aplicacion : " + exception.Message;
+            }
+
+        }
+
     }
 }

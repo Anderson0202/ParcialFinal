@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Class1
+    public class Ips
     {
 
-
+        public string IdIps { get; set; }
+        public string NombreIps { get; set; }
 
     }
 }
