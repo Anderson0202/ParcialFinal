@@ -13,7 +13,7 @@ namespace Entity
         public string IdentificacionPaciente{ get; set; }
         public string NombrePaciente{ get; set; }
         public string IdLaboratorio{ get; set; }
-        public string ValorLaboratorio{ get; set; }
+        public double ValorLaboratorio{ get; set; }
 
     }
 }
