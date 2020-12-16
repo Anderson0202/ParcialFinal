@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class Service
+    public class LiquidacionService
     {
 
         private ConnectionManager connectionManager;
         //public ClienteRepository ClienteRepository;
         //private PedidoRepository PedidoRepository;
 
-        public Service(string connectionString)
+        public LiquidacionService(string connectionString)
         {
             connectionManager = new ConnectionManager(connectionString);
             //ClienteRepository = new ClienteRepository(connectionManager);
